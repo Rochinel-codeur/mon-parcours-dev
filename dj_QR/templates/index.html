@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Générateur de Code QR</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <main>
+        <h1>Générateur de Code QR</h1>
+
+        <!-- Affichage des messages d'erreur -->
+        {% if error %}
+        <div class="error-message" role="alert">
+            <p>{{ error }}</p>
+        </div>
+        {% endif %}
+
+        <form method="post" id="qr-form">
+            {% csrf_token %}
+            <input type="text" name="data" value="{{ data|default:'' }}" placeholder="Écrivez quelque chose ou entrez une URL" required aria-label="Données pour le code QR">
+            <button type="submit">Générer</button>
+        </form>
+
+        <div class="qr-img">
+            {% if qr_code %}
+            <img src="{{ qr_code.url }}" alt="Code QR généré pour : {{ data }}">
+            {% endif %}
+        </div>
+    </main>
+    
+    <script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>
