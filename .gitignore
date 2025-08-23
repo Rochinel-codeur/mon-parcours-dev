@@ -1,0 +1,44 @@
+# Environnements virtuels
+env/
+venv/
+ENV/
+
+# Fichiers de configuration sensibles
+.env
+*.env
+*.key
+*.pem
+
+# Fichiers Python compilés
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Bases de données locales
+*.sqlite3
+
+# Logs
+*.log
+
+# Dossiers de cache
+.cache/
+*.cache
+
+# Fichiers système (macOS / Windows)
+.DS_Store
+Thumbs.db
+
+# Dossiers de dépendances Node.js (si frontend intégré)
+node_modules/
+
+# Dossiers de build ou de déploiement
+build/
+dist/
+
+# Dossiers spécifiques à l’IDE
+.vscode/
+.idea/
+
+# Fichiers de migration compilés
+*/migrations/*.pyc
+*/migrations/__pycache__/
