@@ -44,7 +44,8 @@ dist/
 */migrations/__pycache__/
 
 # Fichiers créés par les exercices Python
-python/sortie/
+python/04_fichiers/sortie/*
+!python/04_fichiers/sortie/.gitkeep
 
 # Fichiers uploadés (QR codes générés)
 media/
