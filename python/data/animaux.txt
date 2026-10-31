@@ -1,0 +1,7 @@
+chien
+chat
+chevre
+lion
+lievre
+boeuf
+oiseau

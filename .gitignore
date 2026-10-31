@@ -42,3 +42,12 @@ dist/
 # Fichiers de migration compilés
 */migrations/*.pyc
 */migrations/__pycache__/
+
+# Fichiers créés par les exercices Python
+python/sortie/
+
+# Fichiers uploadés (QR codes générés)
+media/
+
+# Livres et cours en PDF (droits d'auteur)
+*.pdf
